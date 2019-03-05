@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ExoPlay</string>
+    <string name="log_error_occurred">Some Error Occured</string>
+    <string name="web_client_id">48121146329-dudpqptrd5a9ua5s0bvu7cmosfq93j2n.apps.googleusercontent.com</string>
+    <string name="related">Related</string>
+    <string name="welcome">Welcome</string>
+
+    <color name="lightBlack">#464646</color>
 </resources>

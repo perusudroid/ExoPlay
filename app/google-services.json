@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "48121146329",
+    "firebase_url": "https://exoplay-d0c59.firebaseio.com",
+    "project_id": "exoplay-d0c59",
+    "storage_bucket": "exoplay-d0c59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48121146329:android:d9956e79e940da4d",
+        "android_client_info": {
+          "package_name": "com.perusudroid.exoplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48121146329-k1l4chg7se72uivrhbpqbad51lshc1oa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.perusudroid.exoplay",
+            "certificate_hash": "0f5fc06ad9a63ed13c4b44981889da428ac009bb"
+          }
+        },
+        {
+          "client_id": "48121146329-dudpqptrd5a9ua5s0bvu7cmosfq93j2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHj8O2AciclZzftP4JU_lLCTrGzTNMzXI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48121146329-dudpqptrd5a9ua5s0bvu7cmosfq93j2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

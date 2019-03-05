@@ -28,7 +28,7 @@
         android:focusable="true"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="wrap_content">
 
         <ProgressBar
             android:id="@+id/progress_bar"
@@ -46,13 +46,10 @@
         android:textColor="#000000"
         android:layout_marginStart="@dimen/d10"
         android:layout_marginTop="@dimen/d5"
-        android:gravity="start"
-        android:text="@string/app_name"
-        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
         app:layout_constraintTop_toBottomOf="@+id/player_view"
         app:layout_constraintBottom_toTopOf="@+id/tvDesc"
         app:layout_constraintStart_toStartOf="@+id/guideline_start"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
 
@@ -60,15 +57,12 @@
         android:id="@+id/tvDesc"
         android:textSize="16sp"
         android:maxLines="3"
-        android:gravity="start"
-        android:text="@string/app_name"
         android:textColor="@color/lightBlack"
         android:layout_marginTop="@dimen/d5"
-        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
         app:layout_constraintBottom_toTopOf="@+id/tvRelated"
         app:layout_constraintStart_toStartOf="@+id/tvTitle"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
 
