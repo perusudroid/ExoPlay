@@ -297,6 +297,8 @@ class DetailActivity : BaseActivity(), IDetailView {
 
     override fun onVideoChanged(vidList: VideoListResponse) {
         Log.d("Detail","onVideoChanged ${vidList.url}")
+
+
         currentUri = Uri.parse(vidList.url)
         tvTitle.text = vidList.title
         tvDesc.text = vidList.description

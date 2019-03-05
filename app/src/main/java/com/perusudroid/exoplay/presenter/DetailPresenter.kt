@@ -42,33 +42,37 @@ class DetailPresenter(val iDetailView: IDetailView) : BasePresenter(iDetailView)
         }
     }
 
-    override fun changeVideo() {
-        iDetailView.onVideoChanged(getChangeableVideo())
-    }
-
     /**
      * Loop to the next video
      */
 
-    private fun getChangeableVideo(): VideoListResponse {
+    override fun changeVideo() {
 
 
-        if (playablePosition == vidList?.size!!) {
-            playablePosition = vidList?.size!! - 1
+        val orgSize = vidList?.size!! + 1
+
+        Log.d("Detail","playablePosition $playablePosition vidList ${vidList?.size} org size $orgSize")
+
+
+        if (playablePosition == (vidList?.size!!-1)) {
+            iDetailView.showMessage("You have reached end of the list")
+        }else{
+            iDetailView.showMessage("Playing next video")
+            val tmp = vidList!![playablePosition]
+            playablePosition++
+            iDetailView.onVideoChanged(tmp)
         }
 
-        val tmp = vidList!![playablePosition]
-        playablePosition++
-        return tmp
 
     }
-
 
     /**
      * Update or add video item info to local DB
      */
 
     override fun addOrUpdateVidInfo(currentPosition: Long, state: Int) {
+
+
 
         DBHelper.getInstance(iDetailView.getActivity() as Context).addOrUpdateOnConflict(vidList!![playablePosition].id!!, currentPosition, state)
 

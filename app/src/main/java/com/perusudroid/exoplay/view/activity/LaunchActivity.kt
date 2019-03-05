@@ -39,6 +39,7 @@ class LaunchActivity : BaseActivity(), ILaunchView, IBaseListener {
 
     override fun setRecyclerAdapter(vidLists: List<VideoListResponse>) {
         this.vidList = vidLists as MutableList<VideoListResponse>
+        Log.d(TAG,"Size ${vidList.size}")
         recyclerView.adapter = LaunchAdapter(vidList, this)
 
         vsParent.setChildVisible()
@@ -59,6 +60,7 @@ class LaunchActivity : BaseActivity(), ILaunchView, IBaseListener {
 
     override fun onClick(data: Any?, position: Int) {
 
+        Log.d(TAG, "onClick pos $position")
 
         val intent = Intent(this@LaunchActivity, DetailActivity::class.java)
 
