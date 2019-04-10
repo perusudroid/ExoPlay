@@ -1,3 +1,5 @@
 # ExoPlay
-Exoplayer to save video duration in SQLite and Resume Video on Replay
+Play online videos using exoplayer
+Save current play position and resume on its next play
+Video continues to play next video in the list
 
